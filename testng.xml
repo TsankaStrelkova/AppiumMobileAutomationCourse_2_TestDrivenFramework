@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="listeners.TestListener"></listener>
+    </listeners>
+    <test name="Test">
+        <parameter name="platformName" value="Android"></parameter>
+        <parameter name="deviceName" value="Pixel_6_Pro_API_34"></parameter>
+        <!--parameter name="platformName" value="iOS"></parameter-->
+        <!--parameter name="deviceName" value="iPhone 15"></parameter-->
+        <classes>
+            <class name="tests.LoginTests">
+                <methods>
+                    <include name="successfulLogin"/>
+                    <include name="unsuccessfulLogin"/>
+                </methods>
+            </class>
+            <!--class name="tests.ProductTests">
+                <methods>
+                    <include name="validateProductNameAndPrice"/>
+                    <include name="validateProductDetails"/>
+                </methods>
+            </class-->
+        </classes>
+    </test>
+</suite>
