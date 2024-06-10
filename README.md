@@ -118,3 +118,9 @@ Write to separate logs: https://logging.apache.org/log4j/2.0/ faq.html#separate_
 
 Documentation
 https://www.extentreports.com/
+
+**DeepLinks** 
+
+Deep link is a technology that launches an app and opens a specific page once the user clicks a URL on a web page or another app.
+
+To implement deep links use the DeepLinks.java class from utils/deepLinks
