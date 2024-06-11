@@ -1,5 +1,12 @@
 **First steps to set the project**
 
+**What are we automating?**
+
+Sauce Lab's demo mobile app
+GitHub: https://github.com/saucelabs/sample-app-mobile
+Releases (Latest APKs and IPAs): https://github.com/saucelabs/sample-app-mobile/releases
+
+
 This is a project created based on lectures 1-140 from the course https://www.udemy.com/course/the-complete-appium-course-for-ios-and-android/
 * Create project 
 * Add to git ignore .idea/ 

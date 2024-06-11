@@ -32,6 +32,7 @@ public class DeepLinks {
                 ((InteractsWithApps) driver).activateApp("com.apple.mobilesafari");
                 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
                 wait.until(ExpectedConditions.visibilityOfElementLocated(urlBtn)).click();
+                // Uni code character for Enter button is "\uE007"
                 wait.until(ExpectedConditions.visibilityOfElementLocated(urlBtn)).sendKeys("" + url + "\uE007");
                 wait.until(ExpectedConditions.visibilityOfElementLocated(openBtn)).click();
                 break;

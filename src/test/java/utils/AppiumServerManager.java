@@ -5,7 +5,6 @@ import io.appium.java_client.service.local.AppiumServiceBuilder;
 import io.appium.java_client.service.local.flags.GeneralServerFlag;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.core.Logger;
-import tests.LoginTests;
 import utils.properties.ConfigPropertyManager;
 
 import java.io.File;
@@ -18,7 +17,7 @@ import java.time.Duration;
 public class AppiumServerManager {
     static AppiumDriverLocalService service;
     static int port;
-    static Logger log = (Logger) LogManager.getLogger(LoginTests.class);
+    static Logger log = (Logger) LogManager.getLogger(AppiumServerManager.class);
 
     public static void Start() {
         int count = 0;
